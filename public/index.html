@@ -1,12 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Locamove</title>
 </head>
+
 <body>
-    
+
+  <header class="cabecalho">
+    <h1 class="logo">Locamove</h1>
+
+    <div class="area-busca">
+      <input type="text" placeholder="Buscar carros disponíveis...">
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="alugar.html">Alugar</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a href="conta.html">Conta</a></li>
+      </ul>
+    </nav>
+
+    <main class="conteudo">
+
+      <!-- SLIDER CARROSSEL -->
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="images/HB20.jpg" alt="HB20">
+          </div>
+          <div class="slide">
+            <img src="images/POLO.jpg" alt="POLO">
+          </div>
+          <div class="slide">
+            <img src="images/nivus.jpg" alt="Nivus">
+          </div>
+          <div class="slide">
+            <img src="images/cross.jpg" alt="Cross">
+          </div>
+          <div class="slide">
+            <img src="images/cronos.jpg" alt="Cronos">
+          </div>
+        </div>
+      </div>
+
+      <section class="banner">
+        <p>Destaques em promoção!</p>
+      </section>
+
+      <div class="topo-conteudo">
+        <h2 class="titulo-carros">Carros Disponíveis</h2>
+        <button class="filtro">Filtros</button>
+      </div>
+
+      <section class="cards">
+        <article class="cardimg">
+          <img src="images/POLO.jpg" alt="Polo" class="img">
+          <div class="info">
+            <h3>Polo 2026</h3>
+            <p class="categoria">Hatch compacto</p>
+            <p class="preco">R$ 600/mês</p>
+          </div>
+        </article>
+
+        <article class="cardimg">
+          <img src="images/HB20.jpg" alt="HB20" class="img">
+          <div class="info">
+            <h3>HB20 2026</h3>
+            <p class="categoria">Econômico urbano</p>
+            <p class="preco">R$ 400/mês</p>
+          </div>
+        </article>
+
+        <article class="cardimg">
+          <img src="images/cronos.jpg" alt="Cronos" class="img">
+          <div class="info">
+            <h3>Cronos 2026</h3>
+            <p class="categoria">Sedan econômico</p>
+            <p class="preco">R$ 800/mês</p>
+          </div>
+        </article>
+
+        <article class="cardimg">
+          <img src="images/cross.jpg" alt="Cross" class="img">
+          <div class="info">
+            <h3>Cross 2026</h3>
+            <p class="categoria">SUV familiar</p>
+            <p class="preco">R$ 1000/mês</p>
+          </div>
+        </article>
+
+        <article class="cardimg">
+          <img src="images/nivus.jpg" alt="Nivus" class="img">
+          <div class="info">
+            <h3>Nivus 2026</h3>
+            <p class="categoria">SUV luxuoso</p>
+            <p class="preco">R$ 1200/mês</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer class="rodape">
+    © 2026 - Plataforma de Aluguel de Carros Locamove. Todos os direitos reservados.
+  </footer>
+
 </body>
+
 </html>
