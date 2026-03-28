@@ -234,3 +234,78 @@ body {
   font-size: 1.05rem;
   font-weight: 700;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .cardimg {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+  }
+
+  .menu li + li {
+    margin-top: 0;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .area-busca {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .cabecalho input {
+    width: 100%;
+  }
+
+  .conteudo {
+    padding: 20px;
+  }
+
+  .topo-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .cardimg {
+    width: 100%;
+  }
+
+  .img {
+    height: 210px;
+  }
+
+  .slider {
+    height: 200px;
+  }
+
+  .slide img {
+    height: 200px;
+  }
+
+  .rodape {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+}
